@@ -1,0 +1,7 @@
+services:
+  msft_timezone_to_iana_olsen.tz_convert:
+    class: Drupal\msft_timezone_to_iana_olsen\TzConvert
+    arguments: ['@msft_timezone_to_iana_olsen.msft_tz_data_provider']
+  msft_timezone_to_iana_olsen.msft_tz_data_provider:
+    class: Drupal\msft_timezone_to_iana_olsen\MicrosoftTimeZoneDataProvider
+    arguments: ['@serializer.encoder.xml']

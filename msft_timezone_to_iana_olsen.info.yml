@@ -1,0 +1,5 @@
+name: 'MSFT Timezone to IANA/Olsen'
+type: module
+description: 'Provide a service to convert timezones'
+core: 8.x
+package: 'Custom'
